@@ -25,7 +25,7 @@ app.use(express.urlencoded({ extended: false }));
 // app.use("/api/staff", staffRoute);
 // app.use("/uploads", express.static("uploads"));
 app.get("/", function (req, res) {
-  res.send("Hello from VGU Lecture Attendance Management Server");
+  res.send("Hello from VGU Lecture Attendance Management Backend Server");
 });
 
 mongoose
