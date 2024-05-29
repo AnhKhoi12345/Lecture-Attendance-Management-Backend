@@ -1,6 +1,6 @@
 import { getAllModulesRoute } from "./getAllModules";
-import { getModulesRoute } from "./getModule";
+import { getModulesClassesRoute } from "./getModuleClasses"; 
 export default [
     getAllModulesRoute,
-    getModulesRoute,
+    getModulesClassesRoute,
 ];
