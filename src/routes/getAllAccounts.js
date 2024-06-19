@@ -4,6 +4,7 @@ import { db } from "../database";
     method: 'GET',
     path: '/api/accounts',
     handler: async (req, h) => {
+        console.log("hi");
         const {results} = await db.query(
             'Select * from lam'
         );

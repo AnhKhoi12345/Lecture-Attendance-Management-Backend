@@ -4,7 +4,8 @@ const connection = mysql.createConnection({
     host: 'localhost',
     user: 'khoi',
     password: 'hnak2442001',
-    database: 'new_schema'
+    database: 'new_schema',
+    timezone: 'Z',
 });
 
 export const db = {
