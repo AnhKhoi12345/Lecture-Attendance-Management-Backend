@@ -3,7 +3,7 @@ import { notFound } from "@hapi/boom";
 import { db } from "../database";
 export const getAttendanceListRoute ={
     method: 'GET',
-    path: '/api/modules/{courseId}/{classDate}/user/{userId}',
+    path: '/api/modules/{courseId}/{classDate}/student/{userId}',
     handler:async  (req, h) => {
         const token = req.headers.authtoken;
         const user = await admin.auth().verifyIdToken(token);

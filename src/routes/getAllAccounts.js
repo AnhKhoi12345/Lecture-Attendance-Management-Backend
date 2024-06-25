@@ -1,6 +1,6 @@
 import { notFound } from "@hapi/boom";
 import { db } from "../database";
- export const getAccountRoute ={
+ export const getAllAccountRoute ={
     method: 'GET',
     path: '/api/accounts',
     handler: async (req, h) => {
