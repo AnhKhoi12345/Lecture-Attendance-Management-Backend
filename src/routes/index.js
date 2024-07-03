@@ -8,6 +8,7 @@ import { getAttendanceListRoute } from "./getAttendanceList";
 import { getLecturerRoute } from "./getLecturerModule.js";
 import { getModulesClassesRoute } from "./getModuleClasses"; 
 import { getStudentRoute } from "./getStudentModule.js";
+import { sendNotification } from "./sendNotification.js";
 export default [
     getAllModulesRoute,
     getModulesClassesRoute,
@@ -18,5 +19,6 @@ export default [
     getStudentRoute,
     getLecturerRoute,
     getAllAttendanceListRoute,
-    getAllNotifications
+    getAllNotifications,
+    sendNotification
 ];
