@@ -1,4 +1,5 @@
 import { createAccountRoute } from "./createAccount";
+import {  createFirebaseAccRoute } from "./createFirebaseAccount.js";
 import { getAccountRoute } from "./getAccount";
 import { getAllAccountRoute } from "./getAllAccounts";
 import { getAllAttendanceListRoute } from "./getAllAttendanceList.js";
@@ -20,5 +21,6 @@ export default [
     getLecturerRoute,
     getAllAttendanceListRoute,
     getAllNotifications,
-    sendNotification
+    sendNotification,
+    createFirebaseAccRoute
 ];
