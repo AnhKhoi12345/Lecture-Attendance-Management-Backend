@@ -6,9 +6,10 @@ import * as admin from 'firebase-admin';
     method: 'POST',
     path: '/api/firebase/account',
     handler: async (req, h) => {
-        const {username ='', email='',password=''} = req.payload;
+        const {uuid = '',username ='', email='',password=''} = req.payload;
          await admin.auth()
          .createUser({
+            uid: uuid,
            email: email,
            emailVerified: false,
         //    phoneNumber: '+11234567890',
@@ -25,6 +26,6 @@ import * as admin from 'firebase-admin';
            console.log('Error creating new user:', error);
          });
          
-         return {username,email,password}
+         return {uuid,username,email,password}
     }
  }
