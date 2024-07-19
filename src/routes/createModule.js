@@ -6,7 +6,7 @@ import { db } from "../database";
     handler: async (req, h) => {
         const {name='', capacity ='',etcs='',lecturer_id=''} = req.payload;
          await db.query(
-            'INSERT INTO module ( name, capacity, etcs, lecturer_id) VALUES (?,?,?,?); ', [name, capacity, etcs, lecturer_id]
+            'INSERT INTO module ( name, capacity, etcs, lecturer_id) VALUES (?,?,?,?);', [name, capacity, etcs, lecturer_id]
         );
         
         return {name, capacity, etcs, lecturer_id}

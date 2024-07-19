@@ -7,6 +7,7 @@ import { getAllAttendanceListRoute } from "./getAllAttendanceList.js";
 import { getAllModulesRoute } from "./getAllModules";
 import { getAllNotifications } from "./getAllNotifications.js";
 import { getAttendanceListRoute } from "./getAttendanceList";
+import { getLecturerByNameRoute } from "./getLecturerByName.js";
 import { getLecturerRoute } from "./getLecturerModule.js";
 import { getModulesClassesRoute } from "./getModuleClasses"; 
 import { getStudentRoute } from "./getStudentModule.js";
@@ -24,5 +25,6 @@ export default [
     getAllNotifications,
     sendNotification,
     createFirebaseAccRoute,
-    createModuleRoute
+    createModuleRoute,
+    getLecturerByNameRoute,
 ];
