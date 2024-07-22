@@ -1,6 +1,7 @@
 import { createAccountRoute } from "./createAccount";
 import {  createFirebaseAccRoute } from "./createFirebaseAccount.js";
 import { createModuleRoute } from "./createModule.js";
+import { createProgramModuleRoute } from "./createProgramModule.js";
 import { getAccountRoute } from "./getAccount";
 import { getAllAccountRoute } from "./getAllAccounts";
 import { getAllAttendanceListRoute } from "./getAllAttendanceList.js";
@@ -9,7 +10,9 @@ import { getAllNotifications } from "./getAllNotifications.js";
 import { getAttendanceListRoute } from "./getAttendanceList";
 import { getLecturerByNameRoute } from "./getLecturerByName.js";
 import { getLecturerRoute } from "./getLecturerModule.js";
+import { getModuleByNameRoute } from "./getModuleByName.js";
 import { getModulesClassesRoute } from "./getModuleClasses"; 
+import { getSemesterIdRoute } from "./getSemesterId.js";
 import { getStudentRoute } from "./getStudentModule.js";
 import { sendNotification } from "./sendNotification.js";
 export default [
@@ -27,4 +30,7 @@ export default [
     createFirebaseAccRoute,
     createModuleRoute,
     getLecturerByNameRoute,
+    getModuleByNameRoute,
+    getSemesterIdRoute,
+    createProgramModuleRoute,
 ];
