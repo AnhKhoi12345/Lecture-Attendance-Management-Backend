@@ -1,10 +1,15 @@
 import { createAccountRoute } from "./createAccount";
+import { createClassRoute } from "./createClass.js";
 import {  createFirebaseAccRoute } from "./createFirebaseAccount.js";
+import { createIntakeRoute } from "./createIntake.js";
 import { createLecturerRoute } from "./createLecturer.js";
 import { createModuleRoute } from "./createModule.js";
+import { createModuleEnrollRoute } from "./createModuleEnroll.js";
 import { createProgramRoute } from "./createProgram.js";
 import { createProgramModuleRoute } from "./createProgramModule.js";
+import { createProgramRegisteringRoute } from "./createProgramRegistering.js";
 import { createSemesterrRoute } from "./createSemester.js";
+import { createStudentRoute } from "./createStudent.js";
 import { getAccountRoute } from "./getAccount";
 import { getAllAccountRoute } from "./getAllAccounts";
 import { getAllAttendanceListRoute } from "./getAllAttendanceList.js";
@@ -21,7 +26,9 @@ import { sendNotification } from "./sendNotification.js";
 export default [
     getAllModulesRoute,
     getModulesClassesRoute,
-    createAccountRoute,
+    getLecturerByNameRoute,
+    getModuleByNameRoute,
+    getSemesterIdRoute,
     getAllAccountRoute,
     getAttendanceListRoute,
     getAccountRoute,
@@ -30,13 +37,16 @@ export default [
     getAllAttendanceListRoute,
     getAllNotifications,
     sendNotification,
+    createAccountRoute,
     createFirebaseAccRoute,
     createModuleRoute,
-    getLecturerByNameRoute,
-    getModuleByNameRoute,
-    getSemesterIdRoute,
     createProgramModuleRoute,
     createLecturerRoute,
     createSemesterrRoute,
     createProgramRoute,
+    createClassRoute,
+    createStudentRoute,
+    createProgramRegisteringRoute,
+    createModuleEnrollRoute,
+    createIntakeRoute,
 ];
